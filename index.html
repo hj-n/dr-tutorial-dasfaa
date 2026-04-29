@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DR Tutorial @ DASFAA</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<div class="App">
+		<header>
+			<div class="logo-container">
+				<img src="./assets/dasfaalogo.svg" alt="DASFAA 2026 Logo" class="logo" width="200">
+				<h2 class="tutorial"><i>Tutorial</i></h2>
+			</div>
+			<h1><b>Reliable Visual Analytics with Dimensionality Reduction: Quality Evaluation and Interpretation of Projections</b></h1>
+			<h2>Hyeon Jeon, Takanori Fujiwara, and Rafael M. Martins</h2>
+			<h3>13:45 - 17:00, April 29, 2026, Eorimok, DASFAA 2026, Jeju, Korea</h3>
+		</header>
+	<main>
+		<p>
+			This website provides materials for the DASFAA 2026 tutorial on the reliable use of dimensionality reduction (DR) in visual analytics (VA). The tutorial is designed to be friendly to participants who work with data, databases, or machine learning, but may not have a visualization background. We first explain why visual analytics is useful for reasoning with complex data and how DR turns high-dimensional tables into visual spaces. We then discuss how DR projections can become misleading, and how reliability assessment helps analysts check what the projection preserves, loses, or invents.
+		</p>
+		<p>
+			All tutorial materials, including slides and supplementary resources, will be made available here.
+		</p>
+
+		<section>
+			<h2><i>Part 1: </i>Introduction to Visual Analytics and Dimensionality Reduction</h2>
+			<img src="./assets/01_va_dr_basic_figure.png" alt="Introduction to Visual Analytics and Dimensionality Reduction" class="image" >
+			<p>
+				In this part, we introduce data visualization and visual analytics as tools for supporting human reasoning, not just for making pictures. We explain how interaction, filtering, linking, and visual encodings help analysts inspect data patterns and revise questions. We then introduce dimensionality reduction as a mapping from many features to two or three visual dimensions, covering representative methods such as PCA, MDS, t-SNE, and UMAP. The part closes with practical cautions for using DR projections, especially when interpreting distances, clusters, densities, and algorithm parameters.
+			</p>
+			<ul>
+				<li><a href="./assets/01_va_dr_basic.pdf" target="_blank">PDF</a></li>
+			</ul>
+			<h2><i>Part 2: </i>Reliability of Dimensionality Reduction and Its Assessment</h2>
+			<img src="./assets/02_dr_reliability_figure.png" alt="Reliability of Dimensionality Reduction and Its Assessment" class="image">
+			<p>
+				In this part, we focus on reliability: whether insights drawn from a DR-based visual analysis reflect the underlying data. We discuss common projection distortions, including missing neighbors, false neighbors, cluster splits, cluster merges, and global distance changes. We then present quality assessment methods at local, cluster, and global levels, along with visual approaches for inspecting where distortions occur in a projection. Finally, we introduce practical assessment workflows and the ZADU Python library for computing DR quality measures.
+			</p>
+			<ul>
+				<li><a href="./assets/02_dr_reliability.pdf" target="_blank">PDF</a></li>
+			</ul>
+		</section>
+
+	</main>
+		<footer>
+			<img src="./assets/affiliations.png" alt="Affiliations" class="image">
+			<p>&copy; 2026 Hyeon Jeon</p>
+		</footer>
+	</div>
+
+</body>
+</html>
